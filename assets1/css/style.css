@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -182,9 +182,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #47b2e4;
 }
 
-.navbar .getstarted {
+/* .navbar .getstarted {
   padding: 8px 20px;
-  /* margin-left: 10px; */
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
@@ -195,7 +194,31 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .getstarted:hover {
   color: #fff;
   background: #31a9e1;
+} */
+
+.navbar .getstarted {
+  padding: 8px 20px; /* Padding default */
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+  background-color: transparent; /* Background default transparan */
+  outline: none; /* Menghapus outline default saat fokus */
+  display: inline-block; /* Menggunakan display inline-block untuk menjaga ukuran */
+  text-align: center; /* Menjaga teks di tengah */
 }
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus,
+.navbar .getstarted:active {
+  color: #fff;
+  background-color: #31a9e1; /* Warna background saat hover */
+  border: 2px solid #47b2e4; /* Border tetap sama */
+  outline: none; /* Menghapus outline default saat fokus */
+  padding: 8px 20px; /* Memastikan padding tetap sama */
+}
+
 
 .navbar .dropdown ul {
   display: block;
